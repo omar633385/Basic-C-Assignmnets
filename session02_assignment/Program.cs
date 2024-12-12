@@ -9,7 +9,7 @@ namespace session02_assignment
         static void Main(string[] args)
         {
             #region Write a program that allows the user to enter a number then print it.
-            //Console.Write("Enter number\n ");
+            //Console.Write("Enter number:\n ");
 
             //int number = int.Parse(Console.ReadLine());
             //Console.WriteLine($"You entered : {number}");
@@ -19,13 +19,16 @@ namespace session02_assignment
 
             #region Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
 
-            //int x=10;
-            //int y=5;
+            //int x = 10;
+            //int y = 5;
             //Console.WriteLine($"Before Assigning\n x={x} ,y={y}");
 
             //y = x;
             //Console.WriteLine($"After Assigning\n x={x} ,y={y}");
 
+            //y = 6;
+
+            //Console.WriteLine($"After Modifying y \n x={x} ,y={y}");
 
 
             #endregion
@@ -38,7 +41,7 @@ namespace session02_assignment
             //r1.width = 5;
 
             //Rectangle r2 = new Rectangle();
-           
+
 
             //Console.WriteLine("Before Assigning");
 
@@ -66,7 +69,7 @@ namespace session02_assignment
             //Console.WriteLine($"r2 height = {r2.height}");
             //Console.WriteLine($"r2 width = {r2.width}");
             #endregion
-              
+
 
 
         }
