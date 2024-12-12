@@ -1,5 +1,4 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Diagnostics.Metrics;
 
 namespace session02_assignment
@@ -15,7 +14,7 @@ namespace session02_assignment
             //Console.WriteLine($"You entered : {number}");
 
 
-            #endregion
+            #endregion 
 
             #region Write C# program that Assigning one value type variable to another and modifying the value of one variable and mention what will happen
 
