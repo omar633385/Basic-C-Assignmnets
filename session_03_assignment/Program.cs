@@ -82,17 +82,34 @@
 
             #region 5- Write a program that takes character from the user then if it is a vowel chars (a,e,I,o,u) then print (vowel) otherwise print (consonant).
 
-            Console.WriteLine("Enter char : ");
-            char character;
-            char.TryParse(Console.ReadLine().ToLower(), out character);
-            if (character =='a'|| character =='e' || character == 'i' || character == 'o' || character == 'u' )
-                Console.WriteLine("Vowel");
-            else
-                Console.WriteLine("constant");
+            //Console.WriteLine("Enter char : ");
+            //char character;
+            //char.TryParse(Console.ReadLine().ToLower(), out character);
+            //if (character =='a'|| character =='e' || character == 'i' || character == 'o' || character == 'u' )
+            //    Console.WriteLine("Vowel");
+            //else
+            //    Console.WriteLine("constant");
 
-        
+
 
             #endregion
+
+
+            #region 7- Write a program that allows the user to insert an integer then print a multiplication table up to 12.
+
+            //Console.WriteLine("Enter number : ");
+            //int number;
+            //int.TryParse(Console.ReadLine(), out number);
+            //Console.WriteLine("===================");
+            //for (int i = 1; i <=12; i++)
+            //{
+            //    Console.WriteLine(i*number);
+            //}
+
+
+            #endregion
+
+
         }
     }
 }
