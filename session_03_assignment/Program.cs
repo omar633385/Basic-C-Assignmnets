@@ -109,7 +109,18 @@
 
             #endregion
 
+            #region 8- Write a program that allows to user to insert number then print all even numbers between 1 to this number
 
+            //Console.WriteLine("Enter number : ");
+            //int number;
+            //int.TryParse(Console.ReadLine(), out number);
+            //Console.WriteLine("===================");
+            //for (int i = 1; i <= number; i++)
+            //{
+            //    if (i%2==0)
+            //        Console.WriteLine(i);
+            //}
+            #endregion
         }
     }
 }
