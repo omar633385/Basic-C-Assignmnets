@@ -121,6 +121,18 @@
             //        Console.WriteLine(i);
             //}
             #endregion
+
+            #region 9- Write a program that takes two integers then prints the power.
+            Console.WriteLine("Enter 1st number : ");
+            int number1;
+            int.TryParse(Console.ReadLine(), out number1);
+            Console.WriteLine("Enter 2nd number : ");
+            int number2;
+            int.TryParse(Console.ReadLine(), out number2);
+
+            Console.WriteLine($"result of {number1}^{number2} = {Math.Pow(number1,number2)}");
+
+            #endregion
         }
     }
 }
