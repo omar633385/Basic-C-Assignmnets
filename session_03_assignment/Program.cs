@@ -123,14 +123,69 @@
             #endregion
 
             #region 9- Write a program that takes two integers then prints the power.
-            Console.WriteLine("Enter 1st number : ");
-            int number1;
-            int.TryParse(Console.ReadLine(), out number1);
-            Console.WriteLine("Enter 2nd number : ");
-            int number2;
-            int.TryParse(Console.ReadLine(), out number2);
+            //Console.WriteLine("Enter 1st number : ");
+            //int number1;
+            //int.TryParse(Console.ReadLine(), out number1);
+            //Console.WriteLine("Enter 2nd number : ");
+            //int number2;
+            //int.TryParse(Console.ReadLine(), out number2);
 
-            Console.WriteLine($"result of {number1}^{number2} = {Math.Pow(number1,number2)}");
+            //Console.WriteLine($"result of {number1}^{number2} = {Math.Pow(number1,number2)}");
+
+            #endregion
+
+            #region 11- Write a program to input the month number and print the number of days in that month.
+            Console.WriteLine("Enter Month number : ");
+            int MonthNumber;
+            int.TryParse(Console.ReadLine(), out MonthNumber);
+
+            switch (MonthNumber) {
+
+                case 1:
+                    Console.WriteLine("Days in Month: 31");
+                    break;
+                case 2:
+                    Console.WriteLine("Days in Month: 28");
+                    break;
+                case 3:
+                    Console.WriteLine("Days in Month: 31");
+                    break;
+                case 4:
+                    Console.WriteLine("Days in Month: 30");
+                    break;
+                case 5:
+                    Console.WriteLine("Days in Month: 31");
+                    break;
+
+                case 6:
+                    Console.WriteLine("Days in Month: 30");
+                    break;
+                case 7:
+                    Console.WriteLine("Days in Month: 31");
+                    break;
+                case 8:
+                    Console.WriteLine("Days in Month: 31");
+                    break;
+
+                case 9:
+                    Console.WriteLine("Days in Month: 30");
+                    break;
+    
+                case 10:
+                    Console.WriteLine("Days in Month: 31");
+                    break;
+                case 11:
+                    Console.WriteLine("Days in Month: 30");
+                    break;
+                case 12:
+                    Console.WriteLine("Days in Month: 31");
+                    break;
+                default:
+                    Console.WriteLine("You Entered Invalid Month Number =>Month Numbers in Range 1-12");
+                    break;
+
+            }
+
 
             #endregion
         }
