@@ -135,56 +135,83 @@
             #endregion
 
             #region 11- Write a program to input the month number and print the number of days in that month.
-            Console.WriteLine("Enter Month number : ");
-            int MonthNumber;
-            int.TryParse(Console.ReadLine(), out MonthNumber);
+            //Console.WriteLine("Enter Month number : ");
+            //int MonthNumber;
+            //int.TryParse(Console.ReadLine(), out MonthNumber);
 
-            switch (MonthNumber) {
+            //switch (MonthNumber) {
 
-                case 1:
-                    Console.WriteLine("Days in Month: 31");
-                    break;
-                case 2:
-                    Console.WriteLine("Days in Month: 28");
-                    break;
-                case 3:
-                    Console.WriteLine("Days in Month: 31");
-                    break;
-                case 4:
-                    Console.WriteLine("Days in Month: 30");
-                    break;
-                case 5:
-                    Console.WriteLine("Days in Month: 31");
-                    break;
+            //    case 1:
+            //        Console.WriteLine("Days in Month: 31");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("Days in Month: 28");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("Days in Month: 31");
+            //        break;
+            //    case 4:
+            //        Console.WriteLine("Days in Month: 30");
+            //        break;
+            //    case 5:
+            //        Console.WriteLine("Days in Month: 31");
+            //        break;
 
-                case 6:
-                    Console.WriteLine("Days in Month: 30");
-                    break;
-                case 7:
-                    Console.WriteLine("Days in Month: 31");
-                    break;
-                case 8:
-                    Console.WriteLine("Days in Month: 31");
-                    break;
+            //    case 6:
+            //        Console.WriteLine("Days in Month: 30");
+            //        break;
+            //    case 7:
+            //        Console.WriteLine("Days in Month: 31");
+            //        break;
+            //    case 8:
+            //        Console.WriteLine("Days in Month: 31");
+            //        break;
 
-                case 9:
-                    Console.WriteLine("Days in Month: 30");
-                    break;
-    
-                case 10:
-                    Console.WriteLine("Days in Month: 31");
-                    break;
-                case 11:
-                    Console.WriteLine("Days in Month: 30");
-                    break;
-                case 12:
-                    Console.WriteLine("Days in Month: 31");
-                    break;
-                default:
-                    Console.WriteLine("You Entered Invalid Month Number =>Month Numbers in Range 1-12");
-                    break;
+            //    case 9:
+            //        Console.WriteLine("Days in Month: 30");
+            //        break;
+
+            //    case 10:
+            //        Console.WriteLine("Days in Month: 31");
+            //        break;
+            //    case 11:
+            //        Console.WriteLine("Days in Month: 30");
+            //        break;
+            //    case 12:
+            //        Console.WriteLine("Days in Month: 31");
+            //        break;
+            //    default:
+            //        Console.WriteLine("You Entered Invalid Month Number =>Month Numbers in Range 1-12");
+            //        break;
+
+            //}
+
+
+            #endregion
+
+            #region ///            "18- Within a company, the efficiency of workers is evaluated based on the duration required to complete a specific task. A worker's efficiency level is determined as follows: 
+            ///            -If the worker completes the job within 2 to 3 hours, they are considered highly efficient.
+            ///            - If the worker takes 3 to 4 hours, they are instructed to increase their speed.
+            ///            - If the worker takes 4 to 5 hours, they are provided with training to enhance their speed.
+            ///            - If the worker takes more than 5 hours, they are required to leave the company.
+            ///To calculate the efficiency of a worker, the time taken for the task is obtained via user input from the keyboard."
+            ///
+
+            Console.WriteLine("Enter duration : ");
+            double timeTaken;
+            double.TryParse(Console.ReadLine(), out timeTaken);
+            switch (timeTaken) {
+
+                case >=2 and <= 3: Console.WriteLine("The worker is considered highly efficient."); break;
+                case > 3 and <= 4: Console.WriteLine("The worker is instructed to increase their speed."); break;
+                case >4 and <= 5: Console.WriteLine("The worker is provided with training to enhance their speed.");break;
+                case > 5: Console.WriteLine("The worker is required to leave the company."); break;
+                default: Console.WriteLine("Invalid input. Time taken should be numeric and  greater than 2 ."); break;
+
 
             }
+
+
 
 
             #endregion
