@@ -16,12 +16,25 @@
             #endregion
 
             #region 2- Write a program that allows the user to insert an integer then  print a multiplication table up to 12.
+            //Console.WriteLine("Enter number");
+            //int input;
+            //int.TryParse(Console.ReadLine(), out input);
+            //for (int i = 1; i <= 12; i++)
+            //{
+            //    Console.WriteLine(i*input);
+
+            //}
+
+            #endregion
+
+            #region 3- Write a program that allows to user to insert number then print all even numbers between 1 to this number
             Console.WriteLine("Enter number");
             int input;
             int.TryParse(Console.ReadLine(), out input);
-            for (int i = 1; i <= 12; i++)
+            for (int i = 1; i <= input; i++)
             {
-                Console.WriteLine(i*input);
+                if(i%2==0)
+                    Console.WriteLine(i);
 
             }
 
