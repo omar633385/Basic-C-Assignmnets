@@ -182,31 +182,47 @@ namespace session_4_Assignment
             #endregion
 
             #region 9- Write a program in C# Sharp to find prime numbers within a range of numbers.
-            int Range_begin;
-            int Range_end;
-            Console.WriteLine("Enter the Range ascending");
-            int.TryParse(Console.ReadLine(), out Range_begin);
-            int.TryParse(Console.ReadLine(), out Range_end);
-            Console.WriteLine($"The prime number between {Range_begin} and {Range_end} are:");
+            //int Range_begin;
+            //int Range_end;
+            //Console.WriteLine("Enter the Range ascending");
+            //int.TryParse(Console.ReadLine(), out Range_begin);
+            //int.TryParse(Console.ReadLine(), out Range_end);
+            //Console.WriteLine($"The prime number between {Range_begin} and {Range_end} are:");
 
-            for (int i = Range_begin; i <= Range_end; i++)
+            //for (int i = Range_begin; i <= Range_end; i++)
+            //{
+
+            //    int counter = 0;
+            //    for (int j = 2; j <= i / 2; j++)
+            //    {
+            //        if (i % j == 0)
+            //        {
+            //            counter++;
+            //            break;
+            //        }
+            //    }
+
+            //    if (counter == 0 && i != 1)
+            //    {
+            //        Console.Write("{0} ", i);
+            //    }
+            //}
+
+            #endregion
+
+            #region 10- . Write a program in C# Sharp to convert a decimal number into binary without using an array.
+
+            int input_number;
+            Console.Write("Enter a number to convert:");
+            int.TryParse(Console.ReadLine(), out input_number);
+            string bin_num = string.Empty;
+            while (input_number > 0)
             {
-
-                int counter = 0;
-                for (int j = 2; j <= i / 2; j++)
-                {
-                    if (i % j == 0)
-                    {
-                        counter++;
-                        break;
-                    }
-                }
-
-                if (counter == 0 && i != 1)
-                {
-                    Console.Write("{0} ", i);
-                }
+                bin_num = input_number % 2+bin_num;
+                input_number /= 2;
             }
+            Console.WriteLine($"Binary Number is :{bin_num}");
+
 
             #endregion
         }
