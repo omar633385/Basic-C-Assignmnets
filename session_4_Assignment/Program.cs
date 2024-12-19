@@ -123,43 +123,59 @@ namespace session_4_Assignment
 
             #region 7- Write a program to create a Simple Calculator.
 
-            int number1;
-            int number2;
-            char input_operator;
-            int result;
+            //int number1;
+            //int number2;
+            //char input_operator;
+            //int result;
 
-            Console.WriteLine("Enter two numbers Then  Opertaor (+ - / * %)");
-            int.TryParse(Console.ReadLine(),out number1);
-            int.TryParse(Console.ReadLine(),out number2);
-            char.TryParse(Console.ReadLine(),out input_operator);
+            //Console.WriteLine("Enter two numbers Then  Opertaor (+ - / * %)");
+            //int.TryParse(Console.ReadLine(),out number1);
+            //int.TryParse(Console.ReadLine(),out number2);
+            //char.TryParse(Console.ReadLine(),out input_operator);
 
-            switch (input_operator) {
+            //switch (input_operator) {
 
-                case '+':
-                    result=number1+ number2; 
-                    Console.WriteLine($"{number1}+{number2}={result}");
-                    break;
-                case '-':
-                    result=number1- number2;
-                    Console.WriteLine($"{number1}-{number2}={result}");
+            //    case '+':
+            //        result=number1+ number2; 
+            //        Console.WriteLine($"{number1}+{number2}={result}");
+            //        break;
+            //    case '-':
+            //        result=number1- number2;
+            //        Console.WriteLine($"{number1}-{number2}={result}");
 
-                    break;
-                    case '*':
-                    result = number1 * number2;
-                    Console.WriteLine($"{number1}*{number2}={result}");
+            //        break;
+            //        case '*':
+            //        result = number1 * number2;
+            //        Console.WriteLine($"{number1}*{number2}={result}");
 
-                    break;
-                case '/':
-                    result = number1 / number2; 
-                    Console.WriteLine($"{number1}/{number2}={result}");
-                    break;
-                case '%':
-                    result = number1 % number2;
-                    Console.WriteLine($"{number1}%{number2}={result}");
-                    break;
-                    default:
-                    Console.WriteLine("Invalid operator (+ - / * %) or input (should be number)"); break;
-            }
+            //        break;
+            //    case '/':
+            //        result = number1 / number2; 
+            //        Console.WriteLine($"{number1}/{number2}={result}");
+            //        break;
+            //    case '%':
+            //        result = number1 % number2;
+            //        Console.WriteLine($"{number1}%{number2}={result}");
+            //        break;
+            //        default:
+            //        Console.WriteLine("Invalid operator (+ - / * %) or input (should be number)"); break;
+            //}
+
+
+            #endregion
+
+            #region 8- Write a program to allow the user to enter int and print the REVERSED of it.
+
+            //int input_number;
+            //Console.WriteLine("Enter Number To Be reversed");
+            //int.TryParse(Console.ReadLine(),out input_number);
+            //int rev_num = 0;
+            //while (input_number>0)
+            //{
+            //    rev_num = rev_num * 10 + input_number % 10;
+            //    input_number /= 10;
+            //}
+            //Console.WriteLine($"Reversed Number is :{rev_num}");
 
 
             #endregion
