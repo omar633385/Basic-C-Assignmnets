@@ -1,5 +1,6 @@
 ﻿using System.Threading.Channels;
 using System;
+using System.Reflection;
 namespace session_4_Assignment
 {
     internal class Program
@@ -177,6 +178,35 @@ namespace session_4_Assignment
             //}
             //Console.WriteLine($"Reversed Number is :{rev_num}");
 
+
+            #endregion
+
+            #region 9- Write a program in C# Sharp to find prime numbers within a range of numbers.
+            int Range_begin;
+            int Range_end;
+            Console.WriteLine("Enter the Range ascending");
+            int.TryParse(Console.ReadLine(), out Range_begin);
+            int.TryParse(Console.ReadLine(), out Range_end);
+            Console.WriteLine($"The prime number between {Range_begin} and {Range_end} are:");
+
+            for (int i = Range_begin; i <= Range_end; i++)
+            {
+
+                int counter = 0;
+                for (int j = 2; j <= i / 2; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        counter++;
+                        break;
+                    }
+                }
+
+                if (counter == 0 && i != 1)
+                {
+                    Console.Write("{0} ", i);
+                }
+            }
 
             #endregion
         }
