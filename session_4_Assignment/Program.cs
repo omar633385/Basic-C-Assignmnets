@@ -52,6 +52,31 @@
 
 
             #endregion
+
+            #region 5- Write a program to enter marks of five subjects and calculate total, average and percentage.
+
+            //Console.WriteLine("Enter Marks of five subjects");
+            //int[] Marks=new int[5];
+            //int sum = 0;
+
+
+            //for (int i = 0; i < Marks.Length; i++)
+            //{
+            //   if(int.TryParse(Console.ReadLine(),out Marks[i]))
+            //    {
+
+            //    }
+            //    else {
+            //        Console.WriteLine("Invalid input. Please enter an integer.");
+            //        i--;
+            //    }
+            //   sum += Marks[i];
+               
+            //}
+            //Console.WriteLine($"Sum Of Marks={sum}\nAverage Of Marks={sum / Marks.Length}\nPercentage Of Marks={((double)sum/(Marks.Length))} ");
+
+
+            #endregion
         }
     }
 }
