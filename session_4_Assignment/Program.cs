@@ -1,4 +1,6 @@
-﻿namespace session_4_Assignment
+﻿using System.Threading.Channels;
+using System;
+namespace session_4_Assignment
 {
     internal class Program
     {
@@ -80,41 +82,85 @@
 
             #region 6- Write a program to input the month number and print the number of days in that month.
 
-            int MonthNumber;
-            Console.WriteLine("Enter Month Number");
-            int.TryParse(Console.ReadLine(), out MonthNumber);
-            switch (MonthNumber) {
+            //int MonthNumber;
+            //Console.WriteLine("Enter Month Number");
+            //int.TryParse(Console.ReadLine(), out MonthNumber);
+            //switch (MonthNumber)
+            //{
 
-                case 1:
-                    Console.WriteLine("Days in Month :31");break;
-                    case 2:
-                    Console.WriteLine("Days in Month :28"); break;
-                    case 3:
-                    Console.WriteLine("Days in Month :31");break ;
-                    case 4:
-                    Console.WriteLine("Days in Month :30"); break ;
-                    case 5:
-                    Console.WriteLine("Days in Month :31"); break;
-                case 6:
-                    Console.WriteLine("Days in Month :30"); break;
-                    case 7:
-                    Console.WriteLine("Days in Month :31"); break;
-                    case 8:
-                    Console.WriteLine("Days in Month :31"); break;
-                    case 9:
-                    Console.WriteLine("Days in Month :30"); break;
-                    case 10:
-                    Console.WriteLine("Days in Month : 31"); break;
-                    case 11:
-                    Console.WriteLine("Days in Month :30"); break;
-                    case 12:
-                    Console.WriteLine("Days in Month :31"); break;
-                default:
-                    Console.WriteLine("Invalid Input Month Number is in range (1-12)");
+            //    case 1:
+            //        Console.WriteLine("Days in Month :31"); break;
+            //    case 2:
+            //        Console.WriteLine("Days in Month :28"); break;
+            //    case 3:
+            //        Console.WriteLine("Days in Month :31"); break;
+            //    case 4:
+            //        Console.WriteLine("Days in Month :30"); break;
+            //    case 5:
+            //        Console.WriteLine("Days in Month :31"); break;
+            //    case 6:
+            //        Console.WriteLine("Days in Month :30"); break;
+            //    case 7:
+            //        Console.WriteLine("Days in Month :31"); break;
+            //    case 8:
+            //        Console.WriteLine("Days in Month :31"); break;
+            //    case 9:
+            //        Console.WriteLine("Days in Month :30"); break;
+            //    case 10:
+            //        Console.WriteLine("Days in Month : 31"); break;
+            //    case 11:
+            //        Console.WriteLine("Days in Month :30"); break;
+            //    case 12:
+            //        Console.WriteLine("Days in Month :31"); break;
+            //    default:
+            //        Console.WriteLine("Invalid Input Month Number is in range (1-12)");
+            //        break;
+
+
+            //}
+
+            #endregion
+
+            #region 7- Write a program to create a Simple Calculator.
+
+            int number1;
+            int number2;
+            char input_operator;
+            int result;
+
+            Console.WriteLine("Enter two numbers Then  Opertaor (+ - / * %)");
+            int.TryParse(Console.ReadLine(),out number1);
+            int.TryParse(Console.ReadLine(),out number2);
+            char.TryParse(Console.ReadLine(),out input_operator);
+
+            switch (input_operator) {
+
+                case '+':
+                    result=number1+ number2; 
+                    Console.WriteLine($"{number1}+{number2}={result}");
                     break;
+                case '-':
+                    result=number1- number2;
+                    Console.WriteLine($"{number1}-{number2}={result}");
 
+                    break;
+                    case '*':
+                    result = number1 * number2;
+                    Console.WriteLine($"{number1}*{number2}={result}");
 
+                    break;
+                case '/':
+                    result = number1 / number2; 
+                    Console.WriteLine($"{number1}/{number2}={result}");
+                    break;
+                case '%':
+                    result = number1 % number2;
+                    Console.WriteLine($"{number1}%{number2}={result}");
+                    break;
+                    default:
+                    Console.WriteLine("Invalid operator (+ - / * %) or input (should be number)"); break;
             }
+
 
             #endregion
         }
