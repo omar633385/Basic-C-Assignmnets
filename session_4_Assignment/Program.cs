@@ -28,15 +28,28 @@
             #endregion
 
             #region 3- Write a program that allows to user to insert number then print all even numbers between 1 to this number
-            Console.WriteLine("Enter number");
-            int input;
-            int.TryParse(Console.ReadLine(), out input);
-            for (int i = 1; i <= input; i++)
-            {
-                if(i%2==0)
-                    Console.WriteLine(i);
+            //Console.WriteLine("Enter number");
+            //int input;
+            //int.TryParse(Console.ReadLine(), out input);
+            //for (int i = 1; i <= input; i++)
+            //{
+            //    if(i%2==0)
+            //        Console.WriteLine(i);
 
-            }
+            //}
+
+            #endregion
+
+            #region 4- Write a program that takes two integers then prints the power.
+
+            //Console.WriteLine("Enter two numbers");
+            //int number1;
+            //int.TryParse(Console.ReadLine(), out number1);
+            //int number2;
+            //int.TryParse(Console.ReadLine(), out number2);
+
+            //Console.WriteLine($"{number1}^{number2}={ Math.Pow(number1, number2)}");
+
 
             #endregion
         }
