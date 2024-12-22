@@ -75,12 +75,32 @@ namespace Session05_assignment
             #endregion
 
             #region 5-Write a program in C# Sharp to find maximum and minimum element in an array
-            int[] arr = { 1, 2, 3, 4, 5 };
-            Array.Sort(arr);
-            int MaxValue = arr[arr.Length-1];
-            int MinValue = arr[0];
-            Console.WriteLine($"Maximum Value is :{MaxValue}\nMinimum Value is :{MinValue}");
-            
+            //int[] arr = { 1, 2, 3, 4, 5 };
+            //Array.Sort(arr);
+            //int MaxValue = arr[arr.Length-1];
+            //int MinValue = arr[0];
+            //Console.WriteLine($"Maximum Value is :{MaxValue}\nMinimum Value is :{MinValue}");
+
+
+            #endregion
+
+            #region  6-Write a program in C# Sharp to find the second largest element in an array
+            //int[] arr = { 1, 2, 3, 4, 5 };
+            //Array.Reverse(arr);
+            //int MaxValue = arr[0];
+            //int? SecondMaxValue=null;
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    if (arr[i] != MaxValue)
+            //    {
+            //        if (SecondMaxValue ==null ||arr[i] > SecondMaxValue)
+            //        {
+            //            SecondMaxValue = arr[i];
+            //        }
+            //    }
+            //}
+            //Console.WriteLine($"Second Largest Element is :{SecondMaxValue}");
+
 
             #endregion
         }
