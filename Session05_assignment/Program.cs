@@ -1,4 +1,6 @@
-﻿namespace Session05_assignment
+﻿using System.ComponentModel;
+
+namespace Session05_assignment
 {
     internal class Program
     {
@@ -53,18 +55,32 @@
 
             #region 3- Write a program in C# Sharp to merge two arrays of the same size sorted in ascending order
 
-            int[] arr1 = { 1, 2, 3 };
-            int[] arr2 = { 4, 5, 6 };
-            Array.Sort(arr1);
-            Array.Sort(arr2);
-            int[] mergedArray = new int[arr1.Length + arr2.Length];
-            Array.Copy(arr1, 0, mergedArray, 0, arr1.Length);
-            Array.Copy(arr2, 0, mergedArray, arr1.Length, arr2.Length);
+            //int[] arr1 = { 1, 2, 3 };
+            //int[] arr2 = { 4, 5, 6 };
+            //Array.Sort(arr1);
+            //Array.Sort(arr2);
+            //int[] mergedArray = new int[arr1.Length + arr2.Length];
+            //Array.Copy(arr1, 0, mergedArray, 0, arr1.Length);
+            //Array.Copy(arr2, 0, mergedArray, arr1.Length, arr2.Length);
 
-            foreach (var item in mergedArray)
-            {
-                Console.Write(item+" , ");
-            }
+            //foreach (var item in mergedArray)
+            //{
+            //    Console.Write(item+" , ");
+            //}
+
+            #endregion
+
+            #region 4- Write a program in C# Sharp to count the frequency of each element of an array.
+
+            #endregion
+
+            #region 5-Write a program in C# Sharp to find maximum and minimum element in an array
+            int[] arr = { 1, 2, 3, 4, 5 };
+            Array.Sort(arr);
+            int MaxValue = arr[arr.Length-1];
+            int MinValue = arr[0];
+            Console.WriteLine($"Maximum Value is :{MaxValue}\nMinimum Value is :{MinValue}");
+            
 
             #endregion
         }
