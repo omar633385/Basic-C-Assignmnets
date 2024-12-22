@@ -8,7 +8,7 @@
             //Console.WriteLine("Enter Size of Array");
             //int n;
             //bool flag=int.TryParse(Console.ReadLine(), out n);
-           
+
             //while (!flag|| n<=0) {
 
             //    Console.WriteLine("You entered invalid input it should be int");
@@ -25,7 +25,7 @@
             //        }
 
             //    }
-                
+
             //}
 
             //for (int i = 0; i < n; i++)
@@ -38,6 +38,17 @@
             //    Console.WriteLine();
 
             //}
+            #endregion
+
+            #region 2-Write a program in C# Sharp to find the sum of all elements of the array.
+
+            int[] arr = {1,2,3,4,5};
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum+= arr[i];
+            }
+            Console.Write($"Sum of All Elemnts is :{sum}");
             #endregion
         }
     }
