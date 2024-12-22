@@ -42,13 +42,30 @@
 
             #region 2-Write a program in C# Sharp to find the sum of all elements of the array.
 
-            int[] arr = {1,2,3,4,5};
-            int sum = 0;
-            for (int i = 0; i < arr.Length; i++)
+            //int[] arr = {1,2,3,4,5};
+            //int sum = 0;
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    sum+= arr[i];
+            //}
+            //Console.Write($"Sum of All Elemnts is :{sum}");
+            #endregion
+
+            #region 3- Write a program in C# Sharp to merge two arrays of the same size sorted in ascending order
+
+            int[] arr1 = { 1, 2, 3 };
+            int[] arr2 = { 4, 5, 6 };
+            Array.Sort(arr1);
+            Array.Sort(arr2);
+            int[] mergedArray = new int[arr1.Length + arr2.Length];
+            Array.Copy(arr1, 0, mergedArray, 0, arr1.Length);
+            Array.Copy(arr2, 0, mergedArray, arr1.Length, arr2.Length);
+
+            foreach (var item in mergedArray)
             {
-                sum+= arr[i];
+                Console.Write(item+" , ");
             }
-            Console.Write($"Sum of All Elemnts is :{sum}");
+
             #endregion
         }
     }
