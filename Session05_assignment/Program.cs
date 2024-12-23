@@ -140,7 +140,17 @@ namespace Session05_assignment
 
             #endregion
 
+            #region 9-	Given a list of space separated words, reverse the order of the words.
 
+            //string input = "this is a test";
+
+            //string[]splits=input.Split(' ');
+            //Array.Reverse(splits);
+            //for (int i = 0; i < splits.Length; i++)
+            //{
+            //    Console.WriteLine(splits[i]);
+            //}
+            #endregion
 
 
 
