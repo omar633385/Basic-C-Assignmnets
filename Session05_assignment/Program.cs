@@ -152,6 +152,25 @@ namespace Session05_assignment
             //}
             #endregion
 
+            #region 10-	 Write a program to create two multidimensional arrays of same size. Accept values from the user and store them in first array. Now copy all the elements of the first array on second array and print second array.
+
+
+
+            #endregion
+
+            #region 11-	Write a Program to Print One Dimensional Array in Reverse Order
+
+            //int[] arr = { 1, 2, 3, 4, 5 };
+            //Array.Reverse(arr);
+
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.WriteLine(arr[i]);
+                
+            //}
+
+            #endregion
+
 
 
         }
