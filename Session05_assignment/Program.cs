@@ -1,4 +1,7 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Threading.Channels;
 
 namespace Session05_assignment
 {
@@ -6,24 +9,28 @@ namespace Session05_assignment
     {
         static void Main(string[] args)
         {
+
+
+
             #region 1- . Write a program that prints an identity matrix using for loop, in other words takes a value n from the user and shows the identity table of size n * n.
             //Console.WriteLine("Enter Size of Array");
             //int n;
-            //bool flag=int.TryParse(Console.ReadLine(), out n);
+            //bool flag = int.TryParse(Console.ReadLine(), out n);
 
-            //while (!flag|| n<=0) {
+            //while (!flag || n <= 0)
+            //{
 
             //    Console.WriteLine("You entered invalid input it should be int");
-            //    flag=int.TryParse(Console.ReadLine(), out n);
+            //    flag = int.TryParse(Console.ReadLine(), out n);
             //}
-            //int[,] arr =new int[n,n];
+            //int[,] arr = new int[n, n];
             //for (int i = 0; i < n; i++)
             //{
             //    for (int j = 0; j < n; j++)
             //    {
             //        if (i == j)
             //        {
-            //            arr[i,j] = 1;
+            //            arr[i, j] = 1;
             //        }
 
             //    }
@@ -34,7 +41,7 @@ namespace Session05_assignment
             //{
             //    for (int j = 0; j < n; j++)
             //    {
-            //        Console.Write(arr[i,j]+ "");
+            //        Console.Write(arr[i, j] + "");
 
             //    }
             //    Console.WriteLine();
@@ -103,6 +110,49 @@ namespace Session05_assignment
 
 
             #endregion
+
+            #region ///write a program to find the longest distance between Two equal cells. In this example. The distance is measured by the number Of cells- for example, the distance between the first and the fourth cell is 2 (cell 2 and cell 3).In the example above, the longest distance is between the first 7 and the
+            ///10th 7, with a distance of 8 cells, i.e.the number of cells between the 1st
+            ///And the 10th 7s.
+            ///
+
+            ////int[] array = { 7, 0, 0, 0, 0, 5, 6, 7, 5, 0, 7, 5, 3 };
+            //int[] array = { 1, 1, 1, 1, 1, 1, 1, 1 };
+
+            //int diff = 0;
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    for (int j = i + 1; j < array.Length; j++)
+            //    {
+            //        if (array[i] == array[j] && (j - i) > diff)
+            //        {
+            //            diff = j - i;
+            //        }
+            //    }
+            //}
+            //Console.WriteLine($"Longest distance is {diff}");
+
+
+
+
+
+
+
+            #endregion
+
+
+
+
+
         }
     }
 }
+
+    
+
+
+
+
+    
+
+
