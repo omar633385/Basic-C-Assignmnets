@@ -79,6 +79,27 @@ namespace Session05_assignment
 
             #region 4- Write a program in C# Sharp to count the frequency of each element of an array.
 
+            int[] arr = {1,2,3,3,1,3,4,5};
+            int[] visited = new int[arr.Length];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (visited[i] == -1)
+                    continue;
+
+                int count = 1;
+                for (int j = i+1; j < arr.Length; j++)
+                {
+                    if (arr[i] == arr[j])
+                    {
+                        count++;
+                        visited[j] = -1;
+
+                    }
+                }
+                Console.WriteLine(arr[i] + " " + count);
+
+            }
+
             #endregion
 
             #region 5-Write a program in C# Sharp to find maximum and minimum element in an array
@@ -166,7 +187,7 @@ namespace Session05_assignment
             //for (int i = 0; i < arr.Length; i++)
             //{
             //    Console.WriteLine(arr[i]);
-                
+
             //}
 
             #endregion
