@@ -79,26 +79,26 @@ namespace Session05_assignment
 
             #region 4- Write a program in C# Sharp to count the frequency of each element of an array.
 
-            int[] arr = {1,2,3,3,1,3,4,5};
-            int[] visited = new int[arr.Length];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (visited[i] == -1)
-                    continue;
+            //int[] arr = {1,2,3,3,1,3,4,5};
+            //int[] visited = new int[arr.Length];
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    if (visited[i] == -1)
+            //        continue;
 
-                int count = 1;
-                for (int j = i+1; j < arr.Length; j++)
-                {
-                    if (arr[i] == arr[j])
-                    {
-                        count++;
-                        visited[j] = -1;
+            //    int count = 1;
+            //    for (int j = i+1; j < arr.Length; j++)
+            //    {
+            //        if (arr[i] == arr[j])
+            //        {
+            //            count++;
+            //            visited[j] = -1;
 
-                    }
-                }
-                Console.WriteLine(arr[i] + " " + count);
+            //        }
+            //    }
+            //    Console.WriteLine(arr[i] + " " + count);
 
-            }
+            //}
 
             #endregion
 
@@ -175,7 +175,30 @@ namespace Session05_assignment
 
             #region 10-	 Write a program to create two multidimensional arrays of same size. Accept values from the user and store them in first array. Now copy all the elements of the first array on second array and print second array.
 
+            int[,] arr01 = new int[3,5];
+            int[,]arr02=new int[arr01.GetLength(0),arr01.GetLength(1)];
 
+            for (int i = 0; i < arr01.GetLength(0); i++)
+            {
+                Console.WriteLine($"Enter Data of {i+1} dim");
+                for (int j = 0;  j < arr01.GetLength(1);)
+                {
+                    Console.WriteLine($"Enter Data of other {j+1} dim");
+                    if (int.TryParse(Console.ReadLine(), out arr01[i, j]))
+                        j++;
+                }
+            }
+            Array.Copy(arr01, arr02, arr01.Length);
+            Console.Clear();
+            for (int i = 0; i < arr02.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr02.GetLength(1); j++)
+                {
+                    Console.WriteLine(arr02[i,j]);
+
+                }
+                Console.WriteLine();
+            }
 
             #endregion
 
