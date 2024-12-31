@@ -1,4 +1,7 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System;
+using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
 
 namespace session06_assignment
 {
@@ -65,13 +68,32 @@ namespace session06_assignment
             return result;
         }
 
+        public static int SumArray(ref int[] Arr)
+        {
+            int Sum = 0;
+            Arr = new int[]{ 4,5,6};
+            Arr[0] = 100;
+            for (int i = 0; i < Arr.Length; i++)
+                Sum += Arr[i];
+            return Sum;
+        }
+
         public static void sumsub(int num1, int num2, out int sum, out int sub) {
         
             sum=num1 + num2;
             sub=num1 - num2;
         }
+
+        public static string ChangeChar(string str, int position, string replace,int length= 1)
+        {
+            return str.Remove(position, Math.Min(length, str.Length - position))
+                    .Insert(position, replace);
+        }
+
         static void Main(string[] args)
         {
+            ///====================================part01=============================================================
+            #region Part01
 
             #region 1.	Explain the difference between passing (Value type parameters) by value and by reference then write a suitable c# example.
 
@@ -162,6 +184,26 @@ namespace session06_assignment
 
             #region 6.	Explain the difference between passing (Reference type parameters) by value and by reference then write a suitable c# example
 
+            #region PassingByValue
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumArray(Numbers));//111
+            //Console.WriteLine(Numbers[0]);//1
+            //When a reference type is passed by value, the reference is copied.
+            //Any changes to the object inside the method will reflect outside since the reference points to the same object in memory.
+
+            #endregion
+
+            #region PassingByReference
+
+            //int[] Numbers = { 1, 2, 3 };
+            //Console.WriteLine(SumArray(ref Numbers));//111
+            //Console.WriteLine(Numbers[0]);//100
+
+            ////The ref keyword allows a reference type to be passed by reference.
+            ////Both the object properties and the reference itself can be modified inside the method
+
+            #endregion
+
             #endregion
 
             #region 7.	Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers
@@ -181,6 +223,51 @@ namespace session06_assignment
             //Console.WriteLine($"{num1}+{num2}={sum}\n{num1}-{num2}={sub}");
             #endregion
 
+            #region 8.	Create a function named "ChangeChar" to modify a letter in a certain position (0 based) of a string, replacing it with a different letter
+
+            //string str;
+            //int position;
+            //string replace;
+            //bool isValid;
+            //Console.WriteLine("Enter the string:");
+            //str = Console.ReadLine();
+            //if (string.IsNullOrEmpty(str))
+            //{
+            //    Console.WriteLine("String cannot be null or empty.");
+            //    return;
+            //}
+
+            //do
+            //{
+            //    Console.WriteLine("Enter the position (integer) to start replacing:");
+            //    isValid = int.TryParse(Console.ReadLine(), out position) && position >= 0 && position < str.Length;
+            //    if (!isValid) Console.WriteLine("Invalid position. It must be within the bounds of the string.");
+            //} while (!isValid);
+
+            //Console.WriteLine("Enter the replacement string:");
+            //replace = Console.ReadLine();
+            //if (string.IsNullOrEmpty(replace))
+            //{
+            //    Console.WriteLine("Replacement string cannot be null or empty.");
+            //    return;
+            //}
+
+
+            //try
+            //{
+            //    string result = ChangeChar(str, position, replace, 1);
+            //    Console.WriteLine("Modified String: " + result);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine($"Error: {ex.Message}");
+            //}
+
+            #endregion
+
+            #endregion
+
+            ///=========================================================================================Part02======================================================
 
         }
 
