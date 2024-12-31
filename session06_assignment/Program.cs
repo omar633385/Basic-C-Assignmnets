@@ -1,10 +1,32 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace session06_assignment
 {
+    ///=========================================================================================Enums======================================================
+
+
+    public enum WeekDays:byte
+    {
+        Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    }
+    enum Season:byte
+    {
+        Spring, Summer, Autumn, Winter
+    }
+    [Flags]
+    enum Permissions : byte
+    {
+        Read=1, write=2, Delete=4, Execute=8
+    }
+
+    enum Colors : byte
+    {
+        Red, Green, Blue
+    }
     internal class Program
     {
         public static int SumDigits(int number)
@@ -89,6 +111,8 @@ namespace session06_assignment
             return str.Remove(position, Math.Min(length, str.Length - position))
                     .Insert(position, replace);
         }
+
+
 
         static void Main(string[] args)
         {
@@ -268,6 +292,100 @@ namespace session06_assignment
             #endregion
 
             ///=========================================================================================Part02======================================================
+
+            #region Part02
+            #region 1-	Create an enum called "WeekDays" with the days of the week (Monday to Sunday) as its members. Then, write a C# program that prints out all the days of the week using this enum.
+
+
+            //foreach (var item in Enum.GetValues(typeof(DayOfWeek)))
+            //{
+            //    Console.WriteLine(item);
+            //} 
+
+            #endregion
+
+            #region 2.	Create an enum called "Season" with the four seasons (Spring, Summer, Autumn, Winter) as its members. Write a C# program that takes a season name as input from the user and displays the corresponding month range for that season. Note range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)
+
+            //Console.WriteLine("Enter season (Spring, Summer, Autumn, Winter)");
+
+            //string user_input = Console.ReadLine().ToLower();
+
+            //if (!string.IsNullOrEmpty(user_input))
+            //{
+            //    if (Enum.TryParse(user_input, true, out Season season)){
+            //        switch (season)
+            //        {
+            //            case Season.Spring:
+            //                Console.WriteLine("spring march to may ");
+            //                break;
+            //            case Season.Summer:
+            //                Console.WriteLine("summer june to august ");
+            //                break;
+            //            case Season.Autumn:
+            //                Console.WriteLine("autumn September to November");
+            //                break;
+            //            case Season.Winter:
+            //                Console.WriteLine("winter December to February");
+            //                break;
+            //            default:
+            //                Console.WriteLine("You Entered invalid input");
+            //                break;
+            //        }
+            //    }
+            //}
+
+            #endregion
+
+            #region //4- Assign the following Permissions (Read, write, Delete, Execute) in a form of Enum. 
+            //●Create Variable from previous Enum to Add and Remove Permission from variable,
+            //check if specific Permission is existed inside variable
+
+            //Permissions permission = Permissions.Read;
+            //permission |= Permissions.Execute;
+            //permission^= Permissions.Execute;
+
+            //if ((permission & Permissions.Execute) == Permissions.Execute) 
+            //    Console.WriteLine("Execute Existed");
+
+            //else
+            //    Console.WriteLine("Execute not Exist");
+
+
+            #endregion
+
+
+            #region 5. Create an enum called "Colors" with the basic colors (Red, Green, Blue) as its members. Write a C# program that takes a color name as input from the user and displays a message indicating whether the input color is a primary color or not.
+
+            Console.WriteLine("Enter color (Red, Green, Blue)");
+
+            string user_input = Console.ReadLine().ToLower();
+
+            if (!string.IsNullOrEmpty(user_input))
+            {
+                if (Enum.TryParse(user_input, true, out Colors color))
+                {
+                    switch (color)
+                    {
+                        case Colors.Red:
+                            Console.WriteLine("Red is primary color");
+                            break;
+                        case Colors.Green:
+                            Console.WriteLine("Green is not primary color");
+                            break;
+                        case Colors.Blue:
+                            Console.WriteLine("Blue is primary color");
+                            break;
+
+                        default:
+                            Console.WriteLine("You Entered invalid input color should be(Red, Green, Blue)");
+                            break;
+                    }
+                }
+            }
+
+
+            #endregion
+            #endregion
 
         }
 
