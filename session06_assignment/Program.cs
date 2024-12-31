@@ -16,6 +16,22 @@ namespace session06_assignment
 
             return sum;
         }
+        public static bool isprime(int number) {
+
+            if (number<=1)
+            {
+                return false;
+            }
+
+            for (int i = 2; i < number ; i++)
+            {
+                if(number%i ==0)
+                    return false;
+            }
+
+            return true;
+        
+        }
         static void Main(string[] args)
         {
 
@@ -60,6 +76,26 @@ namespace session06_assignment
             //}
             //while (!flag);
             //Console.WriteLine($"The sum of the digits of the number {number} is: {SumDigits(number)}");
+
+            #endregion
+
+            #region 3.	Create a function named "IsPrime", which receives an integer number and retuns true if it is prime, or false if it is not:
+
+
+            //Console.WriteLine("Enter Number");
+            //int number;
+            //bool flag;
+            //do
+            //{
+            //    flag = int.TryParse(Console.ReadLine(), out number);
+            //}
+            //while (!flag);
+            //if(isprime(number)==true)
+            //    Console.WriteLine($"The number {number} is prime");
+            //else
+            //    Console.WriteLine($"The number {number} is not prime");
+
+
 
             #endregion
 
