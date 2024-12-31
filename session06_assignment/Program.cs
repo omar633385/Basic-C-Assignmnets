@@ -49,6 +49,21 @@ namespace session06_assignment
             return (maximum,minimum);
 
         }
+
+        public static int fact(int number) {
+            int result=1;
+            if (number ==1 || number==0)
+            {
+                return result;   
+            }
+
+            for (int i = 1; i <=number ; i++)
+            {
+
+                result *= i;
+            }
+            return result;
+        }
         static void Main(string[] args)
         {
 
@@ -123,6 +138,20 @@ namespace session06_assignment
 
             //Console.WriteLine($"Maximum Element of Array is {max}\nMinimum Element of Array is {min}");
 
+            #endregion
+
+            #region 5.	Create an iterative (non-recursive) function to calculate the factorial of the number specified as parameter
+
+            Console.WriteLine("Enter Number");
+            int number;
+            bool flag;
+            do
+            {
+                flag = int.TryParse(Console.ReadLine(), out number);
+            }
+            while (!flag ||number<0);
+            Console.WriteLine($"The Factorial of the number {number} is: {fact(number)}");
+                
             #endregion
 
 
