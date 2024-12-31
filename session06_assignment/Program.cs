@@ -64,6 +64,12 @@ namespace session06_assignment
             }
             return result;
         }
+
+        public static void sumsub(int num1, int num2, out int sum, out int sub) {
+        
+            sum=num1 + num2;
+            sub=num1 - num2;
+        }
         static void Main(string[] args)
         {
 
@@ -142,16 +148,37 @@ namespace session06_assignment
 
             #region 5.	Create an iterative (non-recursive) function to calculate the factorial of the number specified as parameter
 
-            Console.WriteLine("Enter Number");
-            int number;
-            bool flag;
-            do
-            {
-                flag = int.TryParse(Console.ReadLine(), out number);
-            }
-            while (!flag ||number<0);
-            Console.WriteLine($"The Factorial of the number {number} is: {fact(number)}");
-                
+            //Console.WriteLine("Enter Number");
+            //int number;
+            //bool flag;
+            //do
+            //{
+            //    flag = int.TryParse(Console.ReadLine(), out number);
+            //}
+            //while (!flag ||number<0);
+            //Console.WriteLine($"The Factorial of the number {number} is: {fact(number)}");
+
+            #endregion
+
+            #region 6.	Explain the difference between passing (Reference type parameters) by value and by reference then write a suitable c# example
+
+            #endregion
+
+            #region 7.	Write a c# Function that accept 4 parameters from user and return result of summation and subtracting of two numbers
+
+            //Console.WriteLine("Enter two Number");
+            //int num1 ,num2;
+            //bool flag1,flag2;
+            //do
+            //{
+            //    flag1 = int.TryParse(Console.ReadLine(), out num1);
+            //    flag2 = int.TryParse(Console.ReadLine(), out num2);
+
+            //}
+            //while (!(flag1 &&flag2));
+
+            //sumsub(num1, num2, out int sum, out int sub);
+            //Console.WriteLine($"{num1}+{num2}={sum}\n{num1}-{num2}={sub}");
             #endregion
 
 
